@@ -59,9 +59,21 @@ namespace kvadraticka2
                     r2 = Math.Sqrt(-d1) / (2 * a);
                     Console.WriteLine("\n 1. výsledek {0:#.##} + i {1:#.##}", r1, r2);
                     Console.WriteLine("\n 2. výsledek {0:#.##} - i {1:#.##}", r1, r2);
-                    Console.ReadLine()
+                    Console.ReadLine();
                     break;
             }
         }
     }
+
+    class vysledky
+    {
+        public static void Main()
+        {
+            Program kv = new Program();
+            kv.read();
+            kv.compute();
+            
+        }
+    }
 }
+
